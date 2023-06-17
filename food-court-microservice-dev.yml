@@ -1,5 +1,5 @@
-food-court-microservice:
-  property: food court profile dev
+server:
+  port: 8091
 
 spring:
   application:
@@ -14,3 +14,8 @@ spring:
     username: root
     password: admin
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8099/eureka
