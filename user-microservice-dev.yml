@@ -1,0 +1,16 @@
+user-microservice:
+  property: user profile dev
+
+spring:
+  application:
+    name: user-microservice
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/users_microservice?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver

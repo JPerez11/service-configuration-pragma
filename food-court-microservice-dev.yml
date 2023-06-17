@@ -1,0 +1,16 @@
+food-court-microservice:
+  property: food court profile dev
+
+spring:
+  application:
+    name: food-court-microservice
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/food_court_microservice?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
