@@ -1,6 +1,14 @@
 server:
   port: 8094
 
+spring:
+  application:
+    name: messaging-microservice
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: off
+
 eureka:
   client:
     serviceUrl:
