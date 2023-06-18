@@ -4,3 +4,12 @@ server:
 spring:
   application:
     name: traceability-microservice
+  data:
+  mongodb:
+    uri: mongodb+srv://jperez:jperez@cluster0.ldixbn5.mongodb.net/food_court?retryWrites=true&w=majority
+
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8099/eureka
