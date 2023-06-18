@@ -4,12 +4,8 @@ server:
 spring:
   application:
     name: messaging-microservice
-  jpa:
-    hibernate:
-      ddl-auto: none
-    open-in-view: off
 
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8099/eureka/
